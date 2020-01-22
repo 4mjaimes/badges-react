@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import './assets/styles/global.css';
 
-const element = <h1>Hello, from React Badges!.</h1>;
+import Badge from './components/Badge';
+
 const container = document.getElementById('App');
 
-ReactDOM.render(element, container);
+ReactDOM.render(<Badge/>, container);
