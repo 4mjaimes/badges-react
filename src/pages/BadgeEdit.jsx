@@ -46,7 +46,6 @@ class BadgeEdit extends React.Component {
     e.preventDefault();
     this.setState({ loading: true, error: null });
     try {
-      this.context
       await api.badges.update(this.props.match.params.badgeId, this.state.form);
       this.setState({ loading: false });
       this.props.history.push("/badges");
